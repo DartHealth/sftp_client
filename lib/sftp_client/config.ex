@@ -37,7 +37,7 @@ defmodule SFTPClient.Config do
           private_key_path: nil | Path.t(),
           private_key_pass_phrase: nil | String.t(),
           inet: :inet | :inet6,
-          ssh_msg_debug_fun: nil | (any(), any(), String.t() -> any()),
+          ssh_msg_debug_fun: nil | (any(), any(), charlist() -> any()),
           sftp_vsn: integer,
           connect_timeout: timeout,
           operation_timeout: timeout,
